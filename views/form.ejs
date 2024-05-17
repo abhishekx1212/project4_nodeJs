@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h3 class="text-white text-center">Add Data</h3>
+                <div class="form-content p-3" style="border-radius: 10px; background-color: rgba(225 ,225 ,225 ,0.4 );">
+                    <form action="/insertData" method="post" class="mb-3">
+                        <input type="text" class="form-control border border-0 mb-4" name="img"
+                            placeholder="Enter Image link" style="background-color: rgba(225 ,225 ,225 ,0.8 );">
+                        <input type="text" class="form-control border border-0" name="name" placeholder="Name"
+                            style="background-color: rgba(225 ,225 ,225 ,0.8 );">
+                        <textarea class="form-control my-4 border border-0" rows="3" name="description"
+                            placeholder="Description" style="background-color: rgba(225 ,225 ,225 ,0.8 );"></textarea>
+                        <input type="number" class="form-control mb-4 border border-0" name="price" placeholder="Price"
+                            style="background-color: rgba(225 ,225 ,225 ,0.8 );">
+                        <label for="" class="fs-5"><strong>Discount:</strong></label>
+                        <input type="radio" name="discount" id="" class="border border-0" value="10%"
+                            style="background-color: rgba(225 ,225 ,225 ,0.8 );"><strong> 10%</strong>
+                        <input type="radio" name="discount" id="" class="ms-4 border border-0" value="15%"
+                            style="background-color: rgba(225 ,225 ,225 ,0.8 );"><strong> 15%</strong>
+                        <input type="radio" name="discount" id="" class="ms-3 border border-0" value="20%"
+                            style="background-color: rgba(225 ,225 ,225 ,0.8 );"><strong> 20%</strong>
+                        <input type="submit" value="ADD" class="mt-4 form-control bg-success text-white">
+                    </form>
+                    <a href="/index" class="fw-bold text-light">GO TO HOME PAGE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
